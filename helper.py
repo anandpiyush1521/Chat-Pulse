@@ -3,6 +3,9 @@ from wordcloud import WordCloud
 import pandas as pd
 from collections import Counter
 import emoji
+from textblob import TextBlob
+import altair as alt
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 extract = URLExtract()
 
@@ -124,4 +127,29 @@ def activity_heatmap(selected_user, df):
     user_heatmap = df.pivot_table(index='day_name', columns='period', values='message', aggfunc='count').fillna(0)
 
     return user_heatmap
+
+def convert_to_df(sentiment):
+	sentiment_dict = {'polarity':sentiment.polarity,'subjectivity':sentiment.subjectivity}
+	sentiment_df = pd.DataFrame(sentiment_dict.items(),columns=['metric','value'])
+	return sentiment_df
+
+def analyze_token_sentiment(docx):
+	analyzer = SentimentIntensityAnalyzer()
+	pos_list = []
+	neg_list = []
+	neu_list = []
+	for i in docx.split():
+		res = analyzer.polarity_scores(i)['compound']
+		if res > 0.1:
+			pos_list.append(i)
+			pos_list.append(res)
+
+		elif res <= -0.1:
+			neg_list.append(i)
+			neg_list.append(res)
+		else:
+			neu_list.append(i)
+
+	result = {'positives':pos_list,'negatives':neg_list,'neutral':neu_list}
+	return result 
 
