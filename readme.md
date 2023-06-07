@@ -39,6 +39,6 @@ Install the required Python libraries using pip:
 
 <b>Calculate Polarity:</b> Use the polarity detection functionality to calculate the overall polarity of the chat conversations. This will provide a score or label indicating whether the chat data is mostly positive, negative, or neutral.
 
-<b>Generate Statistics and Metrics: Analyze the sentiment distribution and any other relevant metrics to gain insights into the sentiment trends in the chat data.
+<b>Generate Statistics and Metrics:</b> Analyze the sentiment distribution and any other relevant metrics to gain insights into the sentiment trends in the chat data.
 
-Visualize Results: Use data visualization libraries like Matplotlib or Seaborn to create visual representations of the sentiment analysis results and statistics, aiding in the interpretation of the findings.
+<b>Visualize Results:</b> Use data visualization libraries like Matplotlib or Seaborn to create visual representations of the sentiment analysis results and statistics, aiding in the interpretation of the findings.
