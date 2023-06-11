@@ -1,3 +1,7 @@
+# Chat-Pulse
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+
 Determining the Polarity and Statistics of Chat Based on Sentiment Analysis
 Introduction
 This project aims to analyze the sentiment of chat conversations and determine their polarity using sentiment analysis techniques. By applying natural language processing (NLP) and machine learning algorithms, we can gain insights into the emotional tone and sentiment of chat interactions.
