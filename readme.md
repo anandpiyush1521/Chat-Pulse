@@ -45,4 +45,4 @@ Install the required Python libraries using pip:
 
 <b>Generate Statistics and Metrics:</b> Analyze the sentiment distribution and any other relevant metrics to gain insights into the sentiment trends in the chat data.
 
-<b>Visualize Results:</b> Use data visualization libraries like Matplotlib or Seaborn to create visual representations of the sentiment analysis results and statistics, aiding in the interpretation of the findings.
+<b>Visualize Results:</b> Use data visualization libraries like Matplotlib to create visual representations of the sentiment analysis results and statistics, aiding in the interpretation of the findings.
