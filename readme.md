@@ -15,6 +15,8 @@ Statistics and Metrics: The project also generates statistics and metrics based 
 
 Customization: The sentiment analysis model used in this project can be customized and fine-tuned based on specific requirements. Users have the flexibility to adjust the model parameters, feature selection, or use their own trained models for sentiment analysis.
 
+###Full Document - http://bvicam.in/INDIACom/IJRMS/downloads/pdf/issue2/4.pdf
+
 <br>
 Requirements
 To run this project, the following dependencies are required:
